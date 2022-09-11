@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block title %} Home_Page {% endblock title %} <!-- it puts what we typed,in the "title block" of _base.html -->
+
+{% block content %}  <!-- it puts what we typed,in the "content block" of _base.html -->
+    <h1> Hello, this is an e-shop that can supply anything.</h1>
+    <h2>{{ greeting }}</h2>  <!-- not a string: 'greeting' -->
+    <h3>We have a branch in {{country}}</h3>
+    <p>List of available items is as below:</p>
+    <ol>
+        <li>Car</li>
+        <li>Clothes</li>
+        <li>Motorcycle</li>
+        <li>Food</li>
+        <li>Accessories</li>
+    </ol>
+    <input type="button" value="{{ button_value }}">
+{% endblock content %}
